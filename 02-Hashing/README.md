@@ -1,5 +1,1 @@
-## Collation of Hashing Programs
-# Contains
-1.Easy
-2.Medium
-3.Hard
+# Collation of Hashing Programs
