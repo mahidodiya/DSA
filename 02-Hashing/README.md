@@ -1,1 +1,0 @@
-# Collation of Hashing Programs
