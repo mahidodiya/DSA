@@ -1,3 +1,4 @@
+#Leetcode 1 Two Sum
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -5,8 +6,10 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        for i in range(len(nums)):
-            for j in range(i+1,len(nums)):
-                if nums[i] + nums[j] == target:
-                    return [i,j]
-        return[]
+        n=len(nums)
+        hashmap = {}
+        for i in range(0,n):
+            remaning = target - nums[i] 
+            if remaning in hashmap:
+                return [hashmap[remaning],i]
+            hashmap[nums[i]] = i
